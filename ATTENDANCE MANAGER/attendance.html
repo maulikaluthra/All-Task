@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="attend-style.css">
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta name="viewport" content='width=device-width, initial-scale=1'>
+        <title>
+            ATTENDANCE TRACKER
+        </title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav">
+                <div class="nav-content">
+                    <div class="nav-bar">
+                        <ul>
+                          <li>
+                            <a href="../LANDING PAGE/landingpage.html"
+                              ><i class="fas fa-home"></i>
+                                HOME
+                            </a>
+                          </li>
+                          <li>
+                            <a href="../DAILY PLANNER/plannerpage.html"> DAILY PLANNER </a>
+                          </li>
+                          <li>
+                            <a href="../EXPENSE MANAGER/expense.html"> FINANCE </a>
+                          </li>
+                          <li>
+                              <a href="#"> ABOUT US </a>
+                          </li>
+                         <img src="pictures\attendance-07.png" class="icon">
+                        </ul>
+                    </div> 
+                </div>
+            </div>          
+        </nav>
+<!-- 
+        <div class="container">
+            <h1>
+                ATTENDANCE TRACKER
+            </h1>
+        <div class="buttons">
+            <ul class="header-list">
+                <!-- <li>
+                    <button type="button" class="todo">
+                        To - Do List
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="habit-btn">
+                        Habit Tracker
+                    </button>
+                </li>
+                <li>
+                   <button type="button" class="goals">
+                        Events and Goals
+                    </button>   
+                </li>                -->
+            </ul> 
+        </div>
+        </div> -->
+        
+        <div class="attend img parallax">
+            <div class="middle">
+                <div class="text">
+                    ATTENDANCE TRACKER
+                </div>
+            </div>
+        </div>
+            <div class="section-2 jumbotron">                        
+                <form class="form" action="javascript:void(0)" id="form">
+                <div class="enter-section">
+                    <label for="enter">
+                        Enter Subject Name
+                    </label> 
+                    <input id="enter" class="subject" type="text" placeholder="Eg: Mathematics" required>
+                    <br>
+                    <label for="enter">
+                        Enter the minimum attendance required (in %) 
+                    </label>
+                    <input type="number" class="minPercent" id="id" placeholder="75" required> <br>
+                    <button type="submit" form="nameform" class="add" value="Add">Add</button>
+
+                    <!-- <label for="done">
+                        Attended
+                    </label>
+                    <input name="done" type="radio" id="Attended" required>
+                    <label for="done">
+                        Bunked
+                    </label>
+                    <input name="done" type="radio" id="Bunked" required>
+                    <br> -->
+                    <!-- <label id="date">
+                        Lecture Date:
+                    </label>
+                    <input id="date" type="datetime-local" placeholder="Deadline" > -->
+                </div>
+                    <!-- <input type="submit" id="submit" value="Set attendance">
+                    <select >
+                        <option value="complete">
+                            Above 75%
+                        </option>
+                        <option value="Pending">
+                            Below 75%
+                        </option>
+                        <option value="All">
+                            All 
+                        </option>
+                    </select> -->
+                </form>
+                
+                <div class="headings">
+                    <div class="subject_name"> Subject Name </div>
+                    <div class="days"> Classes Attended </div>
+                    <div class="total"> Total Classes </div>
+                    <div class="per"> Percentage </div>
+                </div>
+
+                <ul class="list" id="list">
+                    <!-- <li id="0">
+                        <div class="subjectName"> Mathematics </div>
+                        <div class="daysAttended"> 8 </div>
+                        <div class="totalDays"> 10 </div>
+                        <div class="percentage"> 80% </div>
+                        <div class="checkBoxes">
+                            <label for="done">
+                                Attended
+                            </label>
+                            <input name="done" type="radio" id="Attended" required>
+                            <label for="done">
+                                Bunked
+                            </label>
+                            <input name="done" type="radio" id="Bunked" required>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+
+        <div class="footer">
+            <h1>CONTACT US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, porro incidunt a vero voluptatem 
+                molestias obcaecati soluta dolores quaerat quam unde velit accusamus eaque sed tempora laudantium voluptas 
+                deserunt!</p>
+          </div>
+        <script src="attendance.js"></script>
+        </body>
+</html>

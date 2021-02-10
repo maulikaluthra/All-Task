@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f7f9f9;
+}
+
+.nav {
+    /* position: fixed; */
+    margin-top: 0;
+    width: 100%;
+    height: 62.5px;
+    align-content: center;
+    background-color: #0b8d96;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-top: 2%;
+}
+
+
+.nav-content ul li a{
+    color: #F7F9F9;
+    font-family: monospace;
+    font-size: 27px;
+    float: right;
+    margin-left: 3vw;
+    vertical-align: middle;
+}
+
+.icon{
+    margin-left: 33vw;
+    float: right;
+    width: 70px;
+    height: 55px;
+    margin-top: 1.5%;
+}
+
+.container{
+    align-items: center;
+    padding: 100px;
+}
+
+.container h1{
+    text-align: center;
+    text-decoration: underline;
+    color:#0b8d96 ;
+    font-size: 400%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+
+.container h3{
+    text-align: center;
+    color: #0b8d96;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.container h1:hover {
+    text-shadow: 0px 0px 2px #003336;
+}
+
+/* .parallax {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img {
+    width: auto;
+    height: 40vh;
+    margin-bottom: 10%;
+} */
+
+
+.left-container{
+    height: 650px;
+    background-image: url(pictures/website1-03.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+    border: 3px solid #f7f9f9;
+    border-left : 0px !important;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    float: left;
+}
+
+.balance {
+    margin-top: 20% !important;
+    margin : 10px;
+    text-align: center;
+}
+
+.balance-title {
+    font-size: 55px;
+    color: #f7f9f9;
+    /* padding-left: 5% !important; */
+    padding: 2%;
+    font-weight: bold;
+}
+
+.balance-value {
+    font-size: 40px;
+    color : #f7f9f9;
+    /* padding-left: 5% !important; */
+    font-weight: lighter;
+}
+
+.text {
+    color : #f7f9f9;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.value {
+    color: #f7f9f9;
+    font-size: 20px;
+    font-weight: light;
+}
+
+.expense-amount {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.income-amount {
+    float: right;
+    margin-right: 10px;
+    text-align: center
+}
+
+.investment-amount {
+    position: absolute;
+    align-self : center;
+    margin-top: 60px;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.right-container {
+    float: right;
+    display: block;
+    height: 100vh;
+    z-index: -1;
+}
+
+.right-container .right-container-title{
+    display: inline-block;
+    color: #0b8d96;
+    font-size: 100px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.toggle{
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.toggle .expense-tab, .income-tab, .all-tab, .investment-tab{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #0b8d96;
+    font-family: sans-serif;
+    opacity: 0.4;
+}
+
+.toggle .income-tab, .all-tab, .investment-tab{
+    margin-left: 10px;
+}
+
+
+.active{
+    opacity : 1 !important;
+}
+
+.hide{
+    display: none;
+}
+
+.right-container input{
+    /* MAKE INPUT SELECTABLE */
+    -webkit-user-select: auto;      
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+/* //////// EXPENSE ////////// */
+.right-container #expense-list{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.right-container #expense-list .input{
+    /* position: absolute; */
+    display: block;
+    width: auto;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.right-container #expense-list .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container #expense-list .input input#expense-title-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.right-container #expense-list .input input#expense-amount-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.right-container #expense-list .input .add-expense img{
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.right-container #expense-list ul{
+    width: auto;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-y: scroll;
+}
+
+.right-container #expense-list ul.list li{
+    position: relative;
+    font-size: 20px;
+}
+
+.right-container #expense-list ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.right-container #expense-list ul.list li .entry{
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #f0624d;
+}
+
+
+.right-container #expense-list ul.list li #delete{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.right-container #expense-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #f0624d;
+}
+
+
+/* /////// INCOME //////// */
+
+.right-container #income-list{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.right-container #income-list .input{
+    /* position: absolute; */
+    display: block;
+    width: auto;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.right-container #income-list .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container #income-list .input input#income-title-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.right-container #income-list .input input#income-amount-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.right-container #income-list .input .add-income img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.right-container #income-list ul{
+    width: auto;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-y: scroll;
+}
+
+.right-container #income-list ul.list li{
+    position: relative;
+    font-size: 20px;
+}
+
+.right-container #income-list ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.right-container #income-list ul.list li .entry{
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    color: green;
+}
+
+.right-container #income-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: green;
+}
+
+.right-container #income-list ul.list li #delete{
+    position: absolute;
+    width:20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+/* //////// INVESTMENT ////////// */
+.right-container #investment-list{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.right-container #investment-list .input{
+    /* position: absolute; */
+    display: block;
+    width: auto;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+
+.right-container #investment-list .input *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container #investment-list .input input#investment-title-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.right-container #investment-list .input input#investment-amount-input{
+    height: 40px;
+    width : 27vw;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: -10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.right-container #investment-list .input .add-investment img{
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.right-container #investment-list ul{
+    width: auto;
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-y: scroll;
+}
+
+.right-container #investment-list ul.list li{
+    position: relative;
+    font-size: 20px;
+}
+
+.right-container #investment-list ul.list li *{
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.right-container #investment-list ul.list li .entry{
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #fedc56;
+}
+
+.right-container #investment-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family:sans-serif;
+    color: #fedc56;
+}
+
+.right-container #investment-list ul.list li #delete{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+
+/* ////////// ALL ///////////// */
+.right-container #all-list{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.right-container #all-list ul{
+    height: 285px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top:20px;
+    overflow-y: scroll;
+}
+
+.right-container #all-list ul.list li{
+    position: relative;
+    font-size: 20px;
+}
+
+.right-container #all-list ul.list li *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right-container #all-list ul.list li .entry{
+    height: auto;
+    padding-left: 20px;
+    margin-bottom: 10px;;
+    word-wrap: break-word;
+    font-family: sans-serif;
+}
+
+.right-container #all-list ul.list li.expense{
+    color : #f0624d;
+}
+
+.right-container #all-list ul.list li.income {
+    color : green;
+}
+
+.right-container #all-list ul.list li.investment {
+    color: #fcd12a;
+}
+
+.right-container #all-list ul.list li .date {
+    height: auto;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-family:sans-serif;
+}
+
+
+.right-container #all-list ul.list li #delete{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url("pictures/trash-07.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+
+.right-container #all-list ul.list li.expense-list{ /*If this isnt working, .expense*/
+    color: #f0624d;
+}
+
+
+/* .footer{
+    margin-top: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+    background-color:#0b8d96;
+    left: 0;
+    color:#F7F9F9;
+    font-size: 20px;
+}
+
+.footer h1{
+    padding-bottom: 3%;
+}  */
+
+
+.pie-chart {
+    z-index: 1;
+    margin-top: 150px;
+    align-items : center;
+}

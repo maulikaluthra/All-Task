@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="expense.css">
+    <title>Financial Tracker</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-content">
+                <div class="nav-bar">
+                    <ul>
+                      <li>
+                        <a href="../LANDING PAGE/landingpage.html"
+                          ><i class="fas fa-home"></i>
+                            HOME
+                        </a>
+                      </li>
+                      <li>
+                        <a href="../DAILY PLANNER/plannerpage.html"> DAILY PLANNER </a>
+                      </li>
+                      <li>
+                          <a href="../ATTENDANCE MANAGER/attendance.html"> ATTENDANCE </a>
+                      </li>
+                      <li>
+                          <a href="../ABOUT US/about.html"> ABOUT US </a>
+                      </li>
+                      <img src="pictures/whiteexpenseicon-07.png" class="icon">
+                    </ul>
+                  </div> 
+            </div>
+        </div>
+      </header>
+
+      <!-- <div class="container">
+        <div class="heading">
+          <h1>Expense Manager</h1>
+        </div>
+        <div class="img parallax month">
+          <h3>July 2020</h3>
+        </div>
+      </div> -->
+
+      <div class="expense-tracker">
+
+        <div class="col-4 left-container">
+          <div class="balance">
+            <div class="balance-title">
+              Balance
+            </div>
+            <div class="balance-value">
+              ₹0
+            </div>
+          </div>
+          <div class="expense-amount"> 
+            <div class="text">Expense</div>
+            <div class="value"> 
+              ₹0
+            </div>
+          </div>
+          <div class="income-amount"> 
+            <div class="text">Income</div>
+            <div class="value"> 
+              ₹0
+            </div>
+           </div>
+          <div class="investment-amount"> 
+            <div class="text">Investment</div> 
+            <div class="value"> 
+              ₹0
+            </div> </div>
+
+          <div class="pie-chart"> 
+            <canvas id="chart">
+            </canvas>
+          </div>
+        </div>
+
+        <div class="col-8 right-container">
+          <div class="right-container-title">
+            Financial Tracker
+            <div class="month">
+              <h3>
+
+              </h3>
+            </div>
+          </div>
+            <div class="toggle">
+                <div class="expense-tab">Expenses</div>
+                <div class="income-tab">Income</div>
+                <div class="investment-tab">Investments</div>
+                <div class="all-tab active">All</div>
+            </div>
+
+            <div class="hide" id="expense-list">
+              <ul class="list">
+              </ul>
+              <div class="input">
+                  <input type="text" id="expense-title-input" name="description" placeholder="Description">
+                  <input type="number" id="expense-amount-input" name="amount" placeholder="₹0">
+                  <div class="add-expense"><img src="pictures/plus-07.png" alt=""></div>
+              </div>
+            </div>
+
+            <div class="hide" id="income-list">
+                <ul class="list">
+                </ul>
+                <div class="input">
+                    <input type="text" id="income-title-input" name="description" placeholder="Description">
+                    <input type="number" id="income-amount-input" name="amount" placeholder="₹0">
+                    <div class="add-income"><img src="pictures/plus-07.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="hide" id="investment-list">
+              <ul class="list">
+              </ul>
+              <div class="input">
+                <input type="text" id="investment-title-input" name="description" placeholder="Description">
+                <input type="number" id="investment-amount-input" name="amount" placeholder="₹0">
+                <div class="add-investment"><img src="pictures/plus-07.png" alt=""></div>
+              </div>
+            </div>
+            
+            <div id="all-list">
+                <ul class="list">
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer">
+        <h1>CONTACT US</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, porro incidunt a vero voluptatem 
+            molestias obcaecati soluta dolores quaerat quam unde velit accusamus eaque sed tempora laudantium voluptas 
+            deserunt!</p>
+      </div> -->
+
+</body>
+<script src="expense.js"></script>
+
+</html>

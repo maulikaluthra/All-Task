@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    margin-left: 0;
+}
+body{
+    background-color: #f7f9f9 !important;
+}
+
+.nav {
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    height: 10%;
+    align-content: center;
+    background-color: #0b8d96;
+    z-index: 1;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-top: 2%;
+}
+
+
+.nav-content ul li a{
+    color: #F7F9F9;
+    font-family: monospace;
+    font-size: 27px;
+    float: right;
+    margin-left: 3vw;
+    vertical-align: middle;
+}
+
+.icon{
+    margin-left: 40vw;
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin-top: 1.5%;
+}
+
+.container{
+    align-items: center;
+    padding: 100px;
+}
+
+.container h1{
+    text-align: center;
+    text-decoration: underline;
+    color:#0b8d96 ;
+    font-size: 400%;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.container h1:hover {
+    text-shadow: 0px 0px 2px #003336;
+}
+
+.todo{
+    padding-top: 30px;
+      padding: 15px;
+      color:#F7F9F9 ;
+      background-color:#0b8d96 ;
+      border-radius: 30px;
+      margin-top: 10%;
+      border: none;
+      font-weight: bold;
+      transition: ease-in;
+      text-align: center;
+}
+
+.container button{
+    padding-top: 5%;
+      padding: 1.5%;
+      color:#F7F9F9 ;
+      background-color:#0b8d96 !important;
+      border-radius: 30px;
+      margin-top: 3%;
+      border: none;
+      font-weight: bold;
+      transition: ease-in;
+      text-align: center;
+      font-size: 130%;
+}
+.container li{
+    list-style: none;
+}
+
+.container ul button:hover{
+    color:#F7F9F9 ;
+    background-color:#0b8d96 ;
+    border-width: 10px;
+    border-color: #F7F9F9 ;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px 0 rgba(15, 15, 15, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parallax {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img {
+    margin-left: 0;
+    width: 100% !important;
+    height: 75vh;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    align-content: center;
+}
+
+.attend {
+    background-image : url(pictures/attend-05.png);   
+
+}
+
+.middle {
+    text-align: center;
+    z-index: 1;
+    width: 40vw;
+    margin: 0 auto;
+    padding-top: 12%;
+    font-weight: bold;
+}
+
+.text {
+    border: #fff 2px solid;
+    font-size: 64px;
+    color: #fff;
+    padding: 15px 15px;
+}
+
+.jumbotron{
+    background-color: #0b8d96 !important;
+    width: 60%;
+    height: 50%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.section-2{
+    margin-top: 1%;
+    margin-bottom: 100em;
+    margin-left : 20% !important;
+}
+
+label{
+    color: #F7F9F9;
+    text-align: center;
+}
+
+.checkBoxes {
+    position: relative;
+}
+
+input{
+    background:#F7F9F9 ;
+    border-radius: 0.3cm;
+    border: transparent;
+    margin: 30px;
+    padding: 3px;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    margin: 2%;
+}
+
+.add {
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #0b8d96;
+    color: #f7f9f9;
+    border: 1px #f7f9f9 solid;
+}
+
+select {
+    background:#F7F9F9 ;
+    padding: 5px;
+    border-radius: 0.3cm;
+    border: transparent;
+    margin: 20px;
+    padding: 3px;
+}
+
+.list {
+    list-style: none !important;
+    margin-top: 75px;
+    margin-bottom: 40%;
+}
+
+.list li {
+    text-align: left;
+    list-style-type: disc;
+    padding: 10px;
+    background: rgba(2, 67, 83, 0.589);
+    background-position: left !important;
+    margin: 6px;
+    transition: transform 0.5s;
+    color: #F7F9F9;
+    width: 750px;
+    /* text-shadow: 1px 1px 1px black; */
+}
+
+span{
+    float: right;
+}
+
+ .subjectName, .daysAttended, .totalDays, .percentage, .checkBoxes {
+    float: left;
+    position: relative;
+}
+
+.subjectName{
+    max-width: fit-content;
+}
+
+.checkBoxes {
+    float: right;
+    margin-right: 70px;;
+}
+
+.daysAttended{
+    float: left;
+    margin-left: 100px;
+}
+
+.totalDays{
+    float: left;
+    margin-left: 120px;
+}
+
+.percentage{
+    float: left;
+    margin-left: 90px;
+}
+
+.headings .subject_name{
+    float: left;
+    margin-left: 50px;
+}
+
+.headings .days{
+    float: left;
+    margin-left: 20px;
+}
+
+.headings .total{
+    float: left;
+    margin-left: 20px;
+}
+
+.headings .per{
+    float: left;
+    margin-left: 20px;
+}
+
+
+.headings {
+    /* margin-left: 50px; */
+    color: #f7f9f9;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.min-percentage {
+    color:#e32;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 40%;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+    background-color:#0b8d96 ;
+    left: 0;
+    color:#F7F9F9 ;
+    font-size: 20px;
+}
+
+.footer h1{
+    padding-bottom: 3%;
+}
+
+#delete {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    cursor: pointer;
+    background-image: url('pictures/trash-07.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    /* background-color: rgba(2, 67, 83, 0.589); */
+    margin-inline-end: 255px;
+    /* margin-top : 0px !important;
+    align-content: center; */
+}
